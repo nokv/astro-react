@@ -10,7 +10,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "dts": "hcm 'src/**/*.module.css'",
-    "lint:eslint": "eslint .",
+    "lint": "eslint .",
     "lint:prettier": "prettier --check .",
     "lint:style": "stylelint \"**/*.{css,scss}\" --ignore-path .gitignore"
   },
