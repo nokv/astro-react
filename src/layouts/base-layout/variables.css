@@ -1,0 +1,12 @@
+:root {
+  /* Typography */
+  --font-family-default: system-ui, sans-serif;
+
+  /* Color */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-default: var(--color-black);
+
+  /* Index */
+  --z-header: 10;
+}

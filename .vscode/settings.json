@@ -1,0 +1,26 @@
+{
+  "css.validate": false,
+  "scss.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "eslint.codeActionsOnSave.rules": ["!unused-imports/no-unused-imports", "*"],
+  "stylelint.validate": ["css", "astro"],
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.js": "$(capture).spec.js, $(capture).spec.jsx, $(capture).test.js, $(capture).test.jsx",
+    "*.jsx": "$(capture).spec.jsx, $(capture).test.jsx, $(capture).stories.jsx",
+    "*.ts": "$(capture).spec.ts, $(capture).spec.tsx, $(capture).test.ts, $(capture).test.tsx",
+    "*.tsx": "$(capture).spec.tsx, $(capture).test.tsx, $(capture).stories.tsx",
+    "*.component.tsx": "$(capture).styles.ts, $(capture).styles.tsx, $(capture).css, $(capture).scss",
+    "*.module.css": "$(capture).module.css.d.ts, $(capture).module.css.d.ts.map"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "cSpell.words": ["astro", "astrojs"]
+}

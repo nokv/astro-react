@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/stylelintrc",
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-recess-order",
+    "stylelint-config-html/astro"
+  ],
+  "plugins": ["stylelint-declaration-block-no-ignored-properties"],
+  "rules": {
+    "plugin/declaration-block-no-ignored-properties": true
+  },
+  "overrides": []
+}

@@ -1,0 +1,11 @@
+.counter {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  place-items: center;
+  margin: 2em 0 0;
+  font-size: 2em;
+}
+
+.message {
+  text-align: center;
+}

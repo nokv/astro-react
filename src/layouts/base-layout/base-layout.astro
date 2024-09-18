@@ -1,0 +1,48 @@
+---
+import './reset.css';
+import './variables.css';
+import './base.css';
+
+type Props = {
+  meta: {
+    url: string;
+    title: string;
+    description: string;
+    siteName: string;
+    ogImageUrl: string;
+  };
+};
+const { meta } = Astro.props;
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{meta.title}</title>
+
+    <link rel="canonical" href={meta.url} />
+    <meta property="og:title" content={meta.title} />
+    <meta property="og:url" content={meta.url} />
+    <meta property="og:description" content={meta.description} />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={meta.siteName} />
+    <meta property="og:image" content={meta.ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

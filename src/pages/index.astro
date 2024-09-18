@@ -1,0 +1,23 @@
+---
+import type { ComponentProps } from 'astro/types';
+
+import { BaseLayout } from '../layouts';
+import { CounterComponent } from '../components/counter';
+
+const meta: ComponentProps<typeof BaseLayout>['meta'] = {
+  url: 'https://example.com',
+  title: 'title',
+  description: 'description',
+  siteName: 'example.com',
+  ogImageUrl: 'https://example.com/ogp.jpg',
+} as const;
+---
+
+<BaseLayout
+  meta={// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  meta}
+>
+  <CounterComponent client:visible>
+    <h1>Hello, React!</h1>
+  </CounterComponent>
+</BaseLayout>
